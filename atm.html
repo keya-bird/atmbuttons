@@ -1,0 +1,82 @@
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>ATM Machine</title>
+  <!-- Don't use this in production: -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <!-- ----------------- Bootstrap header START ----------------- -->
+
+
+  <style>
+    button {
+      background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    text-align: center;
+    }
+    .atm-container {
+    text-align: center;
+    background-color: #f2f2f2;
+    padding: 200px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .atm-header {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;  
+    margin-bottom: 20px;
+  }
+  
+  
+  .atm-button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  .atm-input {
+    text-align: center;
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f1f4e2;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  </style>
+</head>
+
+<body class="atm-container">
+  <h1 style="font-family: Arial" class="atm-header">ATM Machine</h1>
+  <!-- We will put our React component inside this div. -->
+  <div id="root"></div>
+  <!-- Load React. -->
+  <script src="https://unpkg.com/react/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom/umd/react-dom.development.js" crossorigin></script>
+  <!-- Load our React component. -->
+
+  <script src="atmbuttons.jsx" defer type="text/babel"></script>
+</body>
+
+</html>
