@@ -2,9 +2,9 @@ const ATMDeposit = ({ onChange, isDeposit }) => {
     const choice = ["Deposit", "Cash Back"];
     console.log(`ATM isDeposit: ${isDeposit}`);
     return (
-      <label className="label huge">
+      <label>
         <h3> {choice[Number(!isDeposit)]}</h3>
-        <input type="number" class="atm-input" width="200" onChange={onChange}></input><br />
+        <input type="number" className="atm-input" width="200" onChange={onChange} min="0"></input><br />
         <input type="submit" width="200" value="Submit"></input>
       </label>
     );
@@ -23,6 +23,7 @@ const ATMDeposit = ({ onChange, isDeposit }) => {
 
     let status = `Account Balance $ ${totalState} `;
     console.log(`Account Rendered with isDeposit: ${isDeposit}`);
+    
     const handleChange = event => {
       console.log(`handleChange ${event.target.value}`);
       deposit = Number(event.target.value);
